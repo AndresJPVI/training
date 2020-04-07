@@ -27,6 +27,7 @@ dependencies {
     api 'com.psddev.component-lib:query-memoization-util'
 
     // Third party.
+    api 'org.apache.commons:commons-math3:3.6.1'
     api 'org.slf4j:slf4j-api'
     api 'org.slf4j:slf4j-jdk14'
     api 'org.apache.solr:solr-solrj'
