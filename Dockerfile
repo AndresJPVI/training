@@ -15,3 +15,7 @@ RUN service mysql start \
     && gunzip -c /servers/brightspot/sql.gz | mysql brightspot \
     && service mysql stop
 RUN rm /servers/brightspot/sql.gz
+
+# Add context.xml settings for CountdownUpdateTask
+RUN add_context_config countdown/apiToken "api_key_here"
+RUN add_context_config countdown/endpointUrl "http://127.0.0.1/countdown-endpoint"
